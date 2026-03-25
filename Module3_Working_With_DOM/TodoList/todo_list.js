@@ -24,7 +24,7 @@ function displayTasks() {
         li.innerHTML = `<input type="checkbox" id="task-${index}" ${task.completed ? "checked" : ""}> 
             <label for="task-${index}">${task.text}</label>`; // It constructs HTML content for each task by assigning it to li.innerHTML, which includes a checkbox, a label displaying the task text and corresponding IDs.
         li.querySelector("input").addEventListener("change", () => toggleTask(index)); // with the help of li.querySelector,it sets up an event listener for each checkbox within the task list <li> element.
-        // When the checkbox statte changes, it triggers the toogleTask() function, which is defined below.
+        // When the checkbox statte changes, it triggers the toggleTask() function, which is defined below.
         taskList.appendChild(li); // Then appends the newly created list item containing the task details in the To-Do List interface using the appendChild method.
     });
 }
