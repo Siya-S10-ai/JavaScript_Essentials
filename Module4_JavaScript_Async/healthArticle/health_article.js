@@ -29,7 +29,7 @@ xhr.responseType = 'json';
 // Step 4: Handling the 'onload' event
 xhr.onload = function() {
     var articles = xhr.response.articles;
-    var articleDiv = document.getElementById('articles');
+    var articlesDiv = document.getElementById('articles');
     /**var articles = xhr.response.articles;
       to retrieve the articles array from the JSON response.
     * Var articlesDiv = document.getElementById('articles');
@@ -84,7 +84,7 @@ articles.forEach(function(article) {
     articleDiv.appendChild(benefitsHeader);
     articleDiv.appendChild(benefitsList);
 
-    articleDiv.appendChild(articleDiv);
+    articlesDiv.appendChild(articleDiv);
 });
 
 // We need to send the XMLHttpRequest to fetch tehe data from
