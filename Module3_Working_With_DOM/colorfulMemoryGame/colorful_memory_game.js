@@ -195,7 +195,7 @@ function startGameTimer(timeLeft) {
 
         if (timeLeft === 0) {
             clearInterval(gameInterval);
-            let timeLeft = 30;
+            let timeLeft = 7;
             alert('Game Over!');
             startbtn.disabled = false;
         }
